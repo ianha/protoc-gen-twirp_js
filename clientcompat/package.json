@@ -4,6 +4,6 @@
   "dependencies": {
     "google-protobuf": "^3.5.0",
     "node-fetch": "^2.0.0-alpha.9",
-    "twirp": "^0.0.5"
+    "twirp": "ianha/twirp-js#custom_headers"
   }
 }

@@ -108,13 +108,13 @@ func (g *generator) generateProtobufClient(file *descriptor.FileDescriptorProto,
 		g.P(
 			`        `,
 			jsMethodName,
-			`: function(data) { return rpc(`,
+			`: function(data, customHeaders) { return rpc(`,
 			strconv.Quote(methName),
 			`, rpc.buildMessage(pb.`,
 			inputName,
 			`, data), pb.`,
 			outputName,
-			`); }`,
+			`, customHeaders); }`,
 			trailingComma,
 		)
 	}
